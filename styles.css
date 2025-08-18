@@ -1,0 +1,61 @@
+/*
+  Stylesheet for: Ezequiel Duarte · Chef Privado & Viandas Personalizadas
+  Path: assets/css/styles.css
+*/
+:root{--bg:#0b1220;--card:#111827;--muted:#94a3b8;--text:#e5e7eb;--accent:#00d6a3;--accent-2:#80ffea;--shadow:0 20px 40px rgba(0,0,0,.35);--radius:22px;--radius-lg:28px;--transition:all .25s ease}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:radial-gradient(1200px 600px at 80% -10%, rgba(0,214,163,.15), transparent 60%),radial-gradient(800px 500px at -10% 10%, rgba(128,255,234,.12), transparent 60%),var(--bg);color:var(--text);font:16px/1.6 Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,Noto Sans,"Apple Color Emoji","Segoe UI Emoji"}
+a{color:inherit;text-decoration:none}
+.container{max-width:1120px;margin:0 auto;padding:0 20px}
+/* Header */
+header{position:sticky;top:0;z-index:40;backdrop-filter:saturate(140%) blur(8px)}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{display:flex;align-items:center;gap:10px}
+.brand img{width:44px;height:44px;border-radius:50%;object-fit:cover;box-shadow:0 6px 14px rgba(0,0,0,.35)}
+.brand .name{font-weight:700;letter-spacing:.2px}
+nav ul{display:flex;gap:22px;list-style:none;padding:0;margin:0}
+nav a{color:var(--muted);font-weight:500}
+nav a:hover{color:#fff}
+.cta-header{display:flex;align-items:center;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02));box-shadow:var(--shadow);font-weight:600;transition:var(--transition)}
+.btn:hover{transform:translateY(-2px)}
+.btn-accent{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#0b1220;border:none}
+/* Mobile menu */
+.hamburger{display:none;width:42px;height:42px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04)}
+.mobile-nav{display:none;padding:8px 0 16px}
+.mobile-nav a{display:block;padding:10px 0;color:var(--muted)}
+.mobile-nav a:hover{color:#fff}
+/* Hero */
+.hero{padding:64px 0 40px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:42px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);padding:6px 10px;border-radius:999px}
+.title{font-size:clamp(28px,5vw,56px);line-height:1.1;margin:12px 0 12px}
+.lead{color:#cdd5e0;font-size:18px}
+.hero-cta{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}
+.portrait-card{position:relative;border-radius:var(--radius-lg);overflow:hidden;background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.12);box-shadow:var(--shadow)}
+.portrait{aspect-ratio:4/5;width:100%;object-fit:cover;display:block;filter:saturate(1.05)}
+.portrait-badge{position:absolute;left:16px;bottom:16px;background:rgba(11,18,32,.7);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(8px);padding:10px 14px;border-radius:14px;font-weight:600}
+/* Services */
+section{padding:56px 0}
+.section-title{font-size:28px;margin:0 0 20px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+.card h3{margin:4px 0 8px}
+.card p{color:var(--muted);margin:0}
+/* CTA band */
+.cta-band{margin:22px 0 0;border-radius:var(--radius-lg);padding:26px;background:linear-gradient(135deg, rgba(0,214,163,.16), rgba(128,255,234,.12));border:1px solid rgba(0,214,163,.35)}
+/* Footer */
+footer{padding:36px 0 56px;color:var(--muted)}
+/* Responsive */
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr 1fr}
+  nav{display:none}
+  .hamburger{display:inline-flex;align-items:center;justify-content:center}
+  .mobile-nav.open{display:block}
+}
+@media (max-width:640px){
+  .cards{grid-template-columns:1fr}
+  .btn{width:100%;justify-content:center}
+}

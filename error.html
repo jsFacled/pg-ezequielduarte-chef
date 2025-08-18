@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es" class="theme-dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página no encontrada · Ezequiel Duarte</title>
+  <meta name="robots" content="noindex" />
+  <style>
+    /* === Tokens base (resumen) === */
+    :root{
+      /* Neutros */
+      --white:#FFFFFF;--black:#000000;--text-strong:#111827;--text-light:#e5e7eb;--muted:#94a3b8;
+
+      /* Paleta Healthy & Fresh (B) */
+      --offwhite:#FAFCF7;--forest:#1B4332;--sage:#A3B18A;--saffron:#E3A008;--cta-coral:#CC3E23;
+      /* Paleta Gourmet (A) */
+      --cream:#F9F5EC;--terra:#C65D3D;--olive:#6B8C42;--burgundy:#7A1E2B;
+      /* Paleta Luxury (C) + Dark */
+      --navy-dark:#0F172A;--slate:#111827;--gold:#B88A1D;
+
+      /* Semánticos por defecto (modo oscuro elegante) */
+      --bg:var(--navy-dark);        /* fondo principal */
+      --card:var(--slate);          /* superficies */
+      --text:var(--text-light);     /* texto */
+      --muted-text:var(--muted);    /* texto secundario */
+      --accent:var(--saffron);      /* acento general */
+      --accent-2:#F3CA4E;           /* acento gradiente */
+      --cta-bg:var(--cta-coral);    /* CTA primario */
+      --cta-text:#FFFFFF;           /* texto CTA */
+    }
+    
+    /* Alternativas temáticas (activar en <html class="theme-healthy"> o "theme-gourmet" o "theme-luxury") */
+    .theme-healthy{ --bg:var(--offwhite); --card:#FFFFFF; --text:#1F2937; --muted-text:#475569; --accent:var(--saffron); --accent-2:#F3CA4E; --cta-bg:var(--cta-coral); --cta-text:#FFFFFF; }
+    .theme-gourmet{ --bg:var(--cream); --card:#FFFFFF; --text:#1F2937; --muted-text:#4B5563; --accent:var(--terra); --accent-2:#D97B5F; --cta-bg:var(--burgundy); --cta-text:#FFFFFF; }
+    .theme-luxury{ --bg:#0B0F1A; --card:#0F172A; --text:#E5E7EB; --muted-text:#9CA3AF; --accent:var(--gold); --accent-2:#E3C777; --cta-bg:var(--burgundy); --cta-text:#FFFFFF; }
+    .theme-dark{   --bg:var(--navy-dark); --card:var(--slate); --text:var(--text-light); --muted-text:var(--muted); --accent:var(--saffron); --accent-2:#F3CA4E; --cta-bg:var(--cta-coral); --cta-text:#FFFFFF; }
+
+    /* === Estilos de la 404, reutilizando tokens === */
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;display:grid;place-items:center;background:radial-gradient(1000px 500px at 80% -10%, color-mix(in oklab, var(--accent) 15%, transparent), transparent 60%),var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial}
+    .card{max-width:620px;margin:24px;padding:28px;border-radius:20px;background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.12);text-align:center}
+    h1{font-size:clamp(24px,5vw,42px);line-height:1.1;margin:0 0 8px}
+    p{color:var(--muted-text);margin:.5rem 0 1rem}
+    a.btn{display:inline-block;margin-top:6px;padding:12px 18px;border-radius:999px;background:linear-gradient(90deg, var(--accent), var(--accent-2));color:var(--text-strong);text-decoration:none;font-weight:700;border:none}
+    a.btn.btn-cta{background:var(--cta-bg);color:var(--cta-text)}
+  </style>
+</head>
+<body>
+  <main class="card" role="main" aria-labelledby="title">
+    <h1 id="title">Ups, esta página no existe</h1>
+    <p>Puede que el enlace esté mal escrito o el contenido se haya movido.</p>
+    <a class="btn btn-cta" href="/">Volver al inicio</a>
+  </main>
+</body>
+</html>

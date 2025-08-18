@@ -1,124 +1,152 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ezequiel Duarte · Chef Privado & Viandas Personalizadas</title>
-  <meta name="description" content="Chef privado y de viandas personalizadas en CABA. Cenas a domicilio, menús a medida y delivery de viandas saludables y gourmet." />
-  <meta name="theme-color" content="#0f172a" />
 
-  <!-- Open Graph / SEO -->
+  <title>Chef Ezequiel Duarte | Cocina Privada y Viandas Gourmet</title>
+  <meta name="description" content="Chef privado en CABA. Cenas a domicilio, menús a medida y viandas gourmet personalizadas con entrega. Contacto directo por WhatsApp." />
+  <meta name="theme-color" content="#2E4E3E" />
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Ezequiel Duarte · Chef Privado & Viandas" />
+  <meta property="og:title" content="Chef Ezequiel Duarte · Cocina Privada & Viandas" />
   <meta property="og:description" content="Experiencias gastronómicas privadas y viandas personalizadas en Buenos Aires." />
   <meta property="og:image" content="assets/images/og-cover.jpg" />
   <meta property="og:locale" content="es_AR" />
 
   <link rel="icon" href="assets/icons/favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
 
   <!-- Header -->
   <header>
     <div class="container topbar">
-      <a class="brand" href="#top">
-        <img src="assets/images/ezequiel-avatar.jpg" alt="Foto de Ezequiel Duarte" />
-        <div class="name">Ezequiel Duarte</div>
+      <a href="#inicio" class="brand">
+        <i class="fas fa-utensils"></i>
+        <span>Chef Ezequiel Duarte</span>
       </a>
       <nav aria-label="Principal">
         <ul>
           <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#perfil">Perfil</a></li>
+          <li><a href="#sobre">Sobre mí</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
       <div class="cta-header">
-        <a class="btn btn-accent" href="https://wa.me/5491121756046?text=Buenas%20me%20gustar%C3%ADa%20consultarte%20por%20el%20servicio%20de%20viandas%20personalizadas" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn-wa" href="https://wa.me/5491121756046?text=Hola%20Ezequiel%2C%20quiero%20consultar%20tu%20servicio%20de%20viandas" target="_blank" rel="noopener">WhatsApp</a>
         <button id="hamburger" class="hamburger" aria-label="Abrir menú" aria-controls="mobile-menu" aria-expanded="false">☰</button>
       </div>
     </div>
     <div id="mobile-menu" class="container mobile-nav" role="navigation" aria-label="Menú móvil">
       <a href="#servicios">Servicios</a>
-      <a href="#perfil">Perfil</a>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#testimonios">Testimonios</a>
       <a href="#contacto">Contacto</a>
     </div>
   </header>
 
   <!-- Hero -->
-  <main id="top" class="hero">
-    <div class="container hero-grid">
-      <div>
-        <span class="eyebrow">Chef privado · Viandas personalizadas</span>
-        <h1 class="title">Experiencias gastronómicas privadas y <span style="background:linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip:text; background-clip:text; color:transparent">viandas a medida</span></h1>
-        <p class="lead">Cenas en tu casa, eventos íntimos y un servicio de viandas diseñado según tus objetivos: saludable, gourmet o específico (vegano, vegetariano, sin TACC y más).</p>
-        <div class="hero-cta">
-          <a class="btn btn-accent" href="#contacto">Reservar fecha</a>
-          <a class="btn" href="#perfil">Conocé mi propuesta</a>
-        </div>
+  <section id="inicio" class="hero">
+    <div class="container content">
+      <h1>Sabores exclusivos en tu hogar</h1>
+      <p>Servicios de <strong>cocina privada</strong> y <strong>viandas gourmet</strong> diseñados a tu medida.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://wa.me/5491121756046?text=Hola%20Ezequiel%2C%20quiero%20reservar%20una%20experiencia" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+        <a class="btn btn-outline" href="#servicios">Ver servicios</a>
       </div>
-
-      <aside class="portrait-card" aria-label="Retrato del chef">
-        <img class="portrait" src="assets/images/hero-ezequiel.jpg" alt="Ezequiel Duarte cocinando" />
-        <div class="portrait-badge">CABA y Zona Norte · Entrega de viandas</div>
-      </aside>
     </div>
-  </main>
+  </section>
+
+  <!-- Sobre el Chef -->
+  <section id="sobre" class="about">
+    <div class="container about-grid">
+      <figure class="about-img reveal">
+        <img src="assets/images/chef.jpg" alt="Chef Ezequiel Duarte" />
+      </figure>
+      <div class="about-text reveal">
+        <h2>Sobre el Chef</h2>
+        <p>Con más de 15 años de experiencia, creo experiencias gastronómicas únicas en la intimidad de tu hogar. Mi filosofía: ingredientes frescos, técnica precisa y presentación impecable.</p>
+        <p class="signature">Ezequiel Duarte</p>
+      </div>
+    </div>
+  </section>
 
   <!-- Servicios -->
-  <section id="servicios" class="container">
-    <h2 class="section-title">Servicios</h2>
-    <div class="cards">
-      <article class="card">
-        <h3>👨‍🍳 Cenas privadas</h3>
-        <p>Menú de pasos en tu domicilio o evento reducido. Mise en place, cocción en sitio y emplatado profesional.</p>
-      </article>
-      <article class="card">
-        <h3>🥗 Viandas personalizadas</h3>
-        <p>Planes semanales/mensuales. Opciones saludables, gourmet o por objetivo nutricional. Entrega en CABA.</p>
-      </article>
-      <article class="card">
-        <h3>📋 Menús a medida</h3>
-        <p>Diseño según preferencias (vegano, vegetariano, carnívoro, sin TACC) y restricciones. Sabor, estética y nutrición.</p>
-      </article>
-    </div>
-    <div class="cta-band">
-      ¿Querés ver ejemplos de menús y fotos de platos? <a href="#contacto" class="btn" style="margin-left:10px">Pedilos por WhatsApp</a>
-    </div>
-  </section>
-
-  <!-- Perfil / About -->
-  <section id="perfil" class="container">
-    <h2 class="section-title">Perfil profesional</h2>
-    <div class="card">
-      <p><strong>Ezequiel Duarte</strong> es un chef especializado en <strong>cocina privada y viandas personalizadas</strong>, con amplia experiencia en la creación de menús exclusivos adaptados a los gustos y necesidades de cada cliente. Su estilo se caracteriza por la combinación de técnicas culinarias modernas con recetas tradicionales, logrando platos que equilibran <strong>sabor, estética y nutrición</strong>.</p>
-      <p>Ofrece un servicio integral que incluye: <em>cenas privadas</em>, <em>viandas personalizadas</em> y <em>menús a medida</em> según preferencias alimenticias (vegano, vegetariano, carnívoro, sin TACC, entre otros). Ezequiel cuida cada detalle, desde la selección de ingredientes hasta la entrega final.</p>
-    </div>
-  </section>
-
-  <!-- Contacto -->
-  <section id="contacto" class="container">
-    <h2 class="section-title">Contacto</h2>
-    <div class="card" style="display:grid; gap:12px">
-      <p>Contame qué necesitás (fecha, cantidad de personas, preferencias y si hay restricciones). Te respondo a la brevedad.</p>
-      <div style="display:flex; gap:12px; flex-wrap:wrap">
-        <a class="btn btn-accent" href="https://wa.me/5491121756046?text=Buenas%20me%20gustar%C3%ADa%20consultarte%20por%20el%20servicio%20de%20viandas%20personalizadas" target="_blank" rel="noopener">Contactar por WhatsApp</a>
-        <a class="btn" href="mailto:zentylcontact@gmail.com">Enviar email</a>
-        <a class="btn" href="https://www.instagram.com/ezequielduartechef" target="_blank" rel="noopener">Instagram</a>
+  <section id="servicios" class="services">
+    <div class="container">
+      <h2 class="section-title">Servicios Premium</h2>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="img"><img src="assets/images/cena.jpg" alt="Cocina privada"></div>
+          <div class="body">
+            <h3>Cocina privada a domicilio</h3>
+            <p>Menú personalizado, servicio completo, maridaje de vinos.</p>
+            <a class="btn btn-primary" href="https://wa.me/5491121756046?text=Quiero%20cocina%20privada" target="_blank" rel="noopener">Reservar</a>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="img"><img src="assets/images/viandas.jpg" alt="Viandas gourmet"></div>
+          <div class="body">
+            <h3>Viandas gourmet</h3>
+            <p>Platos listos para disfrutar. Saludables, sabrosos y prácticos.</p>
+            <a class="btn btn-primary" href="https://wa.me/5491121756046?text=Quiero%20viandas" target="_blank" rel="noopener">Solicitar menú</a>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="img"><img src="assets/images/asesoria.jpg" alt="Asesoría culinaria"></div>
+          <div class="body">
+            <h3>Asesoría culinaria</h3>
+            <p>Diseño de menús, clases privadas, consultoría gastronómica.</p>
+            <a class="btn btn-primary" href="https://wa.me/5491121756046?text=Quiero%20asesor%C3%ADa" target="_blank" rel="noopener">Consultar</a>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <footer class="container">
-    <small>© <span id="year"></span> Ezequiel Duarte · Chef Privado & Viandas · CABA</small>
+  <!-- Testimonios -->
+  <section id="testimonios" class="testimonials">
+    <div class="container">
+      <h2 class="section-title">Testimonios</h2>
+      <div class="t-grid">
+        <div class="t-card reveal">
+          <p>“La cena de aniversario fue impecable, sabores y presentación de otro nivel.”</p>
+          <div class="t-author"><strong>Mariana López</strong></div>
+        </div>
+        <div class="t-card reveal">
+          <p>“Las viandas gourmet me cambiaron la semana laboral: ricas y prácticas.”</p>
+          <div class="t-author"><strong>Carlos Mendoza</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contacto">
+    <div class="container">
+      <h2 class="section-title">Contacto</h2>
+      <ul>
+        <li>📞 <a href="tel:+5491121756046">+54 9 11 2175 6046</a></li>
+        <li>✉️ <a href="mailto:zentylcontact@gmail.com">zentylcontact@gmail.com</a></li>
+        <li>📍 Buenos Aires, Argentina</li>
+      </ul>
+      <p class="copy">© <span id="year"></span> Chef Ezequiel Duarte</p>
+    </div>
   </footer>
 
+  <!-- WhatsApp flotante -->
+  <a class="wa-fab" href="https://wa.me/5491121756046?text=Hola%20Ezequiel%2C%20quiero%20coordinar%20tu%20servicio." target="_blank" rel="noopener">💬 Escribime</a>
+
   <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" defer></script>
   <script src="assets/js/script.js"></script>
 </body>
 </html>

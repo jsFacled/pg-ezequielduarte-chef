@@ -37,3 +37,21 @@ const io = new IntersectionObserver(entries=>{
   });
 },{threshold:.15});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// Animación de máquina de escribir para el quote
+const brandQuote = document.getElementById("brandQuote");
+if (brandQuote) {
+  const text = `"La obsesión vence al talento" — Filosofía que guía cada creación culinaria`;
+  let i = 0;
+
+  function typeWriter() {
+    if (i < text.length) {
+      brandQuote.textContent += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, 50); // velocidad de escritura
+    }
+  }
+
+  typeWriter();
+}
+

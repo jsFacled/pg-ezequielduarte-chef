@@ -229,6 +229,40 @@ nav a[aria-current="page"]::after{
 .about-img img{width:100%;border-radius:10px;box-shadow:var(--shadow)}
 .signature{font-style:italic;color:var(--terracota)}
 
+.about-text h2 {
+  font-size: 2rem;
+  color: var(--verde);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  margin-bottom: 1.2em;   /* separa párrafos */
+  line-height: 1.6;
+  color: #444;
+}
+
+.about-text strong {
+  color: var(--terracota);
+  font-weight: 700;
+}
+
+.about-text em {
+  color: var(--verde);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.signature {
+  font-style: italic;
+  color: var(--terracota);
+  font-size: 1.1rem;
+  margin-top: 20px;
+  display: block;
+}
+
 /* Services */
 .services{background:var(--blanco);padding:80px 0}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
@@ -288,4 +322,54 @@ footer{background:var(--verde);color:#fff;text-align:center;padding:40px 0}
 }
 @media (max-width: 600px){
   .hero{ background-position: center 45%; }
+}
+
+/* ===== ABOUT – ajustes responsive ===== */
+@media (max-width: 768px){
+  .about{ padding:56px 0; }
+
+  /* 1) Stacking: una sola columna */
+  .about-grid{
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /* 2) Orden: texto primero, foto después (opcional) */
+  .about-text{ order: 1; }
+  .about-img{ order: 2; width: 100%; justify-self: center; }
+  .about-img img{
+    width: 100%;
+    max-width: 520px;          /* que no se estire de más */
+    height: auto;
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    display: block;
+  }
+
+  /* 3) Tipografías y alineación en móvil */
+  .about-text h2{
+    font-size: 1.75rem;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .about-text p{
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.1em;
+    color: #3a3a3a;
+  }
+  .signature{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.05rem;
+  }
+}
+
+/* Más fino para teléfonos muy chicos */
+@media (max-width: 420px){
+  .about-text h2{ font-size: 1.5rem; }
+  .about{ padding:44px 0; }
 }

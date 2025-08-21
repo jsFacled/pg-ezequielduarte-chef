@@ -469,10 +469,12 @@ nav a[aria-current="page"]::after { width:100%; }
 .neticware-logo {
   height: 22px;
   width: auto;
-  display: block;
+  display: inline-block;
   background: transparent;
-  box-shadow: none;
-  border-radius: 0;
+  box-shadow: 0 0 6px rgba(120, 90, 255, 0.4), 
+              0 0 6px rgba(0, 180, 255, 0.4); /* glow violeta + azul */
+  border-radius: 4px;
+  vertical-align: middle;
 }
 
 

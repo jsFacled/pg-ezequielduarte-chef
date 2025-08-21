@@ -443,15 +443,40 @@ nav a[aria-current="page"]::after { width:100%; }
   margin-top: 14px;
   padding: 14px 0 24px;
 }
+
 .legal-wrap{
-  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  display:flex; align-items:center; justify-content:space-between;
+  gap:20px; flex-wrap:wrap;
 }
+
 .legal-wrap p{ margin:0; opacity:.9; }
-.legal-links{
-  list-style:none; padding:0; margin:0; display:flex; gap:18px;
+
+.neticware-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #d7c9aa; /* Beige del esquema */
+  text-decoration: none;
+  transition: opacity .25s ease, transform .25s ease;
 }
-.legal-links a{ color:#fff; text-decoration:none; opacity:.85; }
-.legal-links a:hover{ opacity:1; border-bottom:1px solid rgba(255,255,255,.6); }
+
+.neticware-link:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.neticware-logo {
+  height: 22px;
+  width: auto;
+  display: block;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+
+
 
 /* Micro-animación glow para el botón WA dentro del footer */
 .footer-cta .btn-wa{
